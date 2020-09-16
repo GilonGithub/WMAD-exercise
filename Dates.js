@@ -30,7 +30,7 @@ const talkingCalendar = function(date) {
         } else {
             str += ` ${day[0]}${day[1]}nd`;
         }
-    } else if (day[1] === '3') {
+    } else if (day[1] === '3' && day[0] != '1') {
         if(day[0] === '0') {
             str += ` ${day[1]}rd`;
         } else {
@@ -47,6 +47,6 @@ const talkingCalendar = function(date) {
 
   };
    
-console.log(talkingCalendar("2017/12/15"));
+console.log(talkingCalendar("2017/12/13"));
 console.log(talkingCalendar("2007/11/11"));
 console.log(talkingCalendar("1987/08/24"));
